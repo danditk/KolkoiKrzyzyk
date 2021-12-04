@@ -49,5 +49,136 @@ namespace KółkoKrzyżyk
                 b.Text = "";
             }
         }
+
+        private void Sprawdz()
+        {
+            
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            ruch++;
+            ((Button) sender).Text = gracz1 ? "O" : "X";
+            ((Button) sender).Enabled = false;
+            if (ruch >= 5)
+            {
+                Sprawdz();
+            }
+
+            gracz1 = !gracz1;
+            lblKto.Text = gracz1 ? "O" : "X";
+        }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            ruch++;
+            ((Button)sender).Text = gracz1 ? "O" : "X";
+            ((Button)sender).Enabled = false;
+            if (ruch >= 5)
+            {
+                Sprawdz();
+            }
+
+            gracz1 = !gracz1;
+            lblKto.Text = gracz1 ? "O" : "X";
+        }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+            ruch++;
+            ((Button)sender).Text = gracz1 ? "O" : "X";
+            ((Button)sender).Enabled = false;
+            if (ruch >= 5)
+            {
+                Sprawdz();
+            }
+
+            gracz1 = !gracz1;
+            lblKto.Text = gracz1 ? "O" : "X";
+        }
+
+        private void btn4_Click(object sender, EventArgs e)
+        {
+            ruch++;
+            ((Button)sender).Text = gracz1 ? "O" : "X";
+            ((Button)sender).Enabled = false;
+            if (ruch >= 5)
+            {
+                Sprawdz();
+            }
+
+            gracz1 = !gracz1;
+            lblKto.Text = gracz1 ? "O" : "X";
+        }
+
+        private void btn5_Click(object sender, EventArgs e)
+        {
+            ruch++;
+            ((Button)sender).Text = gracz1 ? "O" : "X";
+            ((Button)sender).Enabled = false;
+            if (ruch >= 5)
+            {
+                Sprawdz();
+            }
+
+            gracz1 = !gracz1;
+            lblKto.Text = gracz1 ? "O" : "X";
+        }
+
+        private void btn6_Click(object sender, EventArgs e)
+        {
+            ruch++;
+            ((Button)sender).Text = gracz1 ? "O" : "X";
+            ((Button)sender).Enabled = false;
+            if (ruch >= 5)
+            {
+                Sprawdz();
+            }
+
+            gracz1 = !gracz1;
+            lblKto.Text = gracz1 ? "O" : "X";
+        }
+
+        private void btn7_Click(object sender, EventArgs e)
+        {
+            ruch++;
+            ((Button)sender).Text = gracz1 ? "O" : "X";
+            ((Button)sender).Enabled = false;
+            if (ruch >= 5)
+            {
+                Sprawdz();
+            }
+
+            gracz1 = !gracz1;
+            lblKto.Text = gracz1 ? "O" : "X";
+        }
+
+        private void btn8_Click(object sender, EventArgs e)
+        {
+            ruch++;
+            ((Button)sender).Text = gracz1 ? "O" : "X";
+            ((Button)sender).Enabled = false;
+            if (ruch >= 5)
+            {
+                Sprawdz();
+            }
+
+            gracz1 = !gracz1;
+            lblKto.Text = gracz1 ? "O" : "X";
+        }
+
+        private void btn9_Click(object sender, EventArgs e)
+        {
+            ruch++;
+            ((Button)sender).Text = gracz1 ? "O" : "X";
+            ((Button)sender).Enabled = false;
+            if (ruch >= 5)
+            {
+                Sprawdz();
+            }
+
+            gracz1 = !gracz1;
+            lblKto.Text = gracz1 ? "O" : "X";
+        }
     }
 }
