@@ -52,7 +52,43 @@ namespace KółkoKrzyżyk
 
         private void Sprawdz()
         {
-            
+            if (btn1.Text != "" && btn1.Text == btn2.Text && btn2.Text == btn3.Text)
+            {
+                Wygrana();
+            }
+            else if (btn4.Text != "" && btn4.Text == btn5.Text && btn5.Text == btn6.Text)
+            {
+                Wygrana();
+            }
+            else if (btn7.Text != "" && btn7.Text == btn8.Text && btn8.Text == btn9.Text)
+            {
+                Wygrana();
+            }
+            else if (btn1.Text != "" && btn1.Text == btn4.Text && btn4.Text == btn7.Text)
+            {
+                Wygrana();
+            }
+            else if (btn2.Text != "" && btn2.Text == btn5.Text && btn5.Text == btn8.Text)
+            {
+                Wygrana();
+            }
+            else if (btn3.Text != "" && btn3.Text == btn6.Text && btn6.Text == btn9.Text)
+            {
+                Wygrana();
+            }
+            else if (btn1.Text != "" && btn1.Text == btn5.Text && btn5.Text == btn9.Text)
+            {
+                Wygrana();
+            }
+            else if (btn3.Text != "" && btn3.Text == btn5.Text && btn5.Text == btn7.Text)
+            {
+                Wygrana();
+            }
+        }
+
+        private void Wygrana()
+        {
+            wynikO.Text = "!";
         }
 
         private void btn1_Click(object sender, EventArgs e)
