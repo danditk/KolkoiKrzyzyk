@@ -84,18 +84,32 @@ namespace KółkoKrzyżyk
             {
                 Wygrana();
             }
+            else if (ruch == 9)
+            {
+                MessageBox.Show("Remis", "Koniec gry", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Restartuj();
+            }
         }
 
         private void Wygrana()
         {
-            wynikO.Text = "!";
+            MessageBox.Show("Wygrywa gracz: " + (gracz1 ? "O" : "X"), "Wygrana!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (gracz1)
+            {
+                wynikO.Text = (int.Parse(wynikO.Text) + 1).ToString();
+            }
+            else
+            {
+                wynikX.Text = (int.Parse(wynikX.Text) + 1).ToString();
+            }
+            Restartuj();
         }
 
         private void btn1_Click(object sender, EventArgs e)
         {
             ruch++;
-            ((Button) sender).Text = gracz1 ? "O" : "X";
-            ((Button) sender).Enabled = false;
+            ((Button)sender).Text = gracz1 ? "O" : "X";
+            ((Button)sender).Enabled = false;
             if (ruch >= 5)
             {
                 Sprawdz();
